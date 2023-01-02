@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos GIT</title>
+</head>
+<body>
+    <h1>Fixando os comandos GIT e GITHUB</h1>
+    <p>Sempre iniciar uma pasta com o comando <strong>GIT INIT</strong></p> <br>
+
+    <h2>Configuando o GIT</h2>
+
+    <p><code><strong>GIT CONFIG -- GLOBAL USER.NAME</strong></code> - para configurar o usuario</p>
+
+    <p><code><strong>GIT CONFIG -- GLOBAL USER.EMAIL</strong></code> - para configurar o e-mail da conta GIT</p><br>
+
+    <p>Para verificar da conta configurada é só usar os comandos:</p>
+
+    <p><code><strong>GIT CONFIG USER.NAME</strong></code> e <code><strong>GIT CONFIG USER.EMAIL</strong></code></p>
+    <h2>Comandos</h2>
+    <p><code>PWD</code> - Mostra onde você está.</p>
+    <p><code>CD</code> - Comando para trocar de pasta. ex: cd /c</p>
+    <p><code>CLEAR</code> - Comando para limpar o terminal.</p>
+    <p><code>LS</code> - Comando para mostrar todos os arquivos na pasta.</p>
+    <p><code>MKDIR</code> - Comando para criar uma nova pasta</p>
+    <p><code>TOUCH</code> - Comando para criar um arquivo.</p>
+    <p>------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <h2>Comando Basicos</h2>
+    <p>Abrir uma pasta e depois ir em <code>GIT BASH HERE</code> para abrir o terminal do GIT. Depois iniciar o projeto com o comando
+     <CODE>GIT INIT</CODE></p>
+     <p>para exibir arquivos ocultos é só o comando <code>LS -A</code></p>
+     <p><code>GIT ADD</code> - Comando para adicionar o arquivo ao container.</p>
+
+     <p><code>GIT ADD . ou *</code> - Comando pra adicionar tudo de uma vez.</p>
+
+     <p><code>GIT STATUS</code> - Comando para verificar o que esta dentro do container.</p>
+
+     <p><code>GIT COMMIT -M</code> - Comando para identificar o e armazenar/subir o arquivo que está no container.</p>
+     <p>OBS> <code>GIT COMMIT -AM "Sobe tudo de uma vez"</code> sobe tudo de uma vez</p>
+
+     <p>Ex: <code>TOUCH</code> pra criar arquivo <strong>a.txt</strong>. <code>GIT STATUS</code> pra verificar. <code>GIT ADD</code>
+    para adicionar. Depois de adicionar e identificar é só comitar com o <code>GIT COMMIT -M "Subindo arquivo"</code>.</p>
+    <p><code>GIT LOG</code> - Comando para mostrar o log.</p>
+
+     <p><code>GIT LOG --ONELINE</code> - Comando para mostrar abreviar.</p>
+     <p>------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <h2>Controle de Versão</h2>
+    <p>Rastreando e recuperando versões anteriores do projeto.</p>
+    <p><code>GIT LOG --ONELINE</code> - Comando pra mostrar o numero do HASH. São sempre os 7 primeiros.</p>
+    <p>HASH = identificador de cada commit.</p>
+    <p><code>GIT LOG --GRAPH</code> - Comando pra mostrar o desenho de <strong>GRAPH</strong>.</p>
+    <p><code>GIT LOG --ONELINE --GRAPH</code> - Comando pra <strong>abreviar</strong> o GRAPH.</p>
+    <p><code>GIT BRANCH</code> - Comando usado verificar em qual <strong>RAMO</strong> você esta ex: main, master ou outro.</p>
+    
+    <h3>Aprendendo a rastrear as mudanças no projeto e recuperar uma versão anterior.</h3>
+    <p>Para recuperar uma versão antetior temos que apontar o <strong>HEAD</strong> para o <code>COMMIT</code> / <code>HASH</code> que desejamos acessar.</p>
+    <p><code>GIT CHECKOUT</code> - Comando para trocar de <strong>HASH</strong>, basta colocar o identifcador de 7 digitos que ele volta pro HASH
+    escolhido. EX: <code>GIT CHECKOUT 807b130</code> </p>
+    <p>Para voltar é só digitar <code>GIT CHECKOUT</code> e o nome do HASH</p>
+
+    <h3>Desfazendo Alterações e Excluindo um Commit</h3>
+    <p><code>GIT DIFF</code> - Comando para mostrar as alterações que foram feitas no arquivo.</p>
+    <p>para desfazer alguma alteração basta seguir as instruções do GIT STATUS</p>
+    <P><code>GIT CHECKOUT</code> + o nome do arquivo. Apos o comando ele vai descartar as alterações</P>
+
+    <p><code>GIT RESET --HARD</code> - Comando para excluir o COMMIT. Bastar usar o comando e colocar o penultimo HASH.</p>
+    
+</body>
+</html>

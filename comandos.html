@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>Fixando os comandos GIT e GITHUB</h1>
+    
     <p>Sempre iniciar uma pasta com o comando <strong>GIT INIT</strong></p> <br>
 
     <h2>Configuando o GIT</h2>
@@ -19,7 +20,10 @@
     <p>Para verificar da conta configurada é só usar os comandos:</p>
 
     <p><code><strong>GIT CONFIG USER.NAME</strong></code> e <code><strong>GIT CONFIG USER.EMAIL</strong></code></p>
+
     <h2>Comandos</h2>
+    <p>Video / Aula 3</p>
+
     <p><code>PWD</code> - Mostra onde você está.</p>
     <p><code>CD</code> - Comando para trocar de pasta. ex: cd /c</p>
     <p><code>CLEAR</code> - Comando para limpar o terminal.</p>
@@ -46,7 +50,10 @@
 
      <p><code>GIT LOG --ONELINE</code> - Comando para mostrar abreviar.</p>
      <p>------------------------------------------------------------------------------------------------------------------------------------------</p>
+
     <h2>Controle de Versão</h2>
+    <p>Video / Aula 4</p>
+
     <p>Rastreando e recuperando versões anteriores do projeto.</p>
     <p><code>GIT LOG --ONELINE</code> - Comando pra mostrar o numero do HASH. São sempre os 7 primeiros.</p>
     <p>HASH = identificador de cada commit.</p>
@@ -55,17 +62,43 @@
     <p><code>GIT BRANCH</code> - Comando usado verificar em qual <strong>RAMO</strong> você esta ex: main, master ou outro.</p>
     
     <h3>Aprendendo a rastrear as mudanças no projeto e recuperar uma versão anterior.</h3>
+
     <p>Para recuperar uma versão antetior temos que apontar o <strong>HEAD</strong> para o <code>COMMIT</code> / <code>HASH</code> que desejamos acessar.</p>
     <p><code>GIT CHECKOUT</code> - Comando para trocar de <strong>HASH</strong>, basta colocar o identifcador de 7 digitos que ele volta pro HASH
     escolhido. EX: <code>GIT CHECKOUT 807b130</code> </p>
     <p>Para voltar é só digitar <code>GIT CHECKOUT</code> e o nome do HASH</p>
 
     <h3>Desfazendo Alterações e Excluindo um Commit</h3>
+
     <p><code>GIT DIFF</code> - Comando para mostrar as alterações que foram feitas no arquivo.</p>
     <p>para desfazer alguma alteração basta seguir as instruções do GIT STATUS</p>
     <P><code>GIT CHECKOUT</code> + o nome do arquivo. Apos o comando ele vai descartar as alterações</P>
 
     <p><code>GIT RESET --HARD</code> - Comando para excluir o COMMIT. Bastar usar o comando e colocar o penultimo HASH.</p>
+    <p>------------------------------------------------------------------------------------------------------------------------------------------</p>
     
+    <h2>Criando Ramificações do Projeto e Resolução de Conflitos</h2>
+    <p>Criar Ramificações permite que testes e mudanças no projeto sejam feitas sem interferir no porjeoto original.</p>
+    <p>Aprendendo a fazer a fusão das ramificações e implantando as mudanças em uma unica versão do projeto</p>
+    <p><code>GIT BRANCH</code> Vai mostrar em qual ramo você esta.</p>
+    <p>Para criar um novo ramo é só usar o comando <code>GIT CHECKOUT -B + "novoRamo" nome do ramo.</code></p>
+    <p><code>GIT LOG --ONELINE --GRAPH --ALL</code> Comando para mostrar o GRAPH completo.</p>
+    <p><code>GIT LOG --GRAPH --ALL</code></p>
+    <p><strong>OBS</strong> Se o terminal travar é só aperntar a letra <strong>Q</strong>.</p>
+
+    <h2>Fazendo a Fusão dos Ramos</h2>
+    <p><strong>OBS</strong> Para fazer a fusão dos ramos precisa estar no ramo <strong>principal</strong> e o usar o comando <code>GIT MERGE + nome do ramo</code>.</p>
+    <p>Ex: <code>GIT MERGE TESTE</code></p>
+
+    <h2>Resolvendo caso de Conflitos</h2>
+    <p>Caso o merge automatico falhe ele irá mostrar o arquivo que esta com conflito / diferente. (Basta ir no VSCODE que vai motrar quais ações tomar)</p>
+    <p>Sempre tem que resolver o conflito antes de prosseguir</p>
+    <p>ACCEPT CURRENTE CHANCE - Aceitar a mudança atual.</p>
+    <p>ACCEPT INCOMING CHANCE - Aceitar a mudança de entrada (A do ramo criado).</p>
+    <p>ACCEPT BOTH CHANCE - Aceitar ambas mudanças (Do ramo principal e a do ramo criado).</p>
+    <p>COMPARE CHANCE - Comparar as mudanças.</p>
+    
+    
+
 </body>
 </html>
